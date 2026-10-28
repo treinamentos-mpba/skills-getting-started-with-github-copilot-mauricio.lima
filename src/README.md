@@ -9,21 +9,29 @@ Uma aplicação FastAPI super simples que permite que estudantes visualizem e se
 
 ## Primeiros Passos
 
-1. Instale as dependências:
+1. Na raiz do projeto, instale as dependências:
 
-   ```
-   pip install fastapi uvicorn
+   ```bash
+   python -m pip install -r requirements.txt
    ```
 
 2. Execute a aplicação:
 
-   ```
-   python app.py
+   ```bash
+   python -m uvicorn src.app:app --reload
    ```
 
 3. Abra seu navegador e acesse:
    - Documentação da API: http://localhost:8000/docs
    - Documentação alternativa: http://localhost:8000/redoc
+
+## Testes
+
+Na raiz do projeto, execute os testes do backend:
+
+```bash
+python -m pytest tests -v
+```
 
 ## Endpoints da API
 
